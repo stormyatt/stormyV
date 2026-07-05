@@ -265,5 +265,5 @@
 - type: weightedRandom
   id: NTAgentObjectiveGroupCutCosts
   weights:
-    DefundDepartmentObjective: 1
+    # DefundDepartmentObjective: 1
     CutCostsObjective: 1
