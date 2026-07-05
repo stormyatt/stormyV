@@ -26,6 +26,7 @@
   components:
   - type: StealCondition
     verifyMapExistence: true
+    descriptionText: objective-condition-thief-multiply-description
 
 - type: entity
   abstract: true

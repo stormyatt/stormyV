@@ -94,7 +94,7 @@
     objectiveNoOwnerText: objective-condition-steal-title-no-owner
     objectiveText: objective-condition-steal-title
     descriptionText: objective-condition-steal-description
-    descriptionMultiplyText: objective-condition-steal-multiply-description #deltaV traitors basic stuff stealing
+    descriptionMultiplyText: objective-condition-steal-multiply-description #deltaV - traitors basic stuff stealing
 
 # requires that the player not die, ignores being on emergency shuttle or cuffed
 - type: entity
