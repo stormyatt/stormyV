@@ -19,6 +19,15 @@
       sprite: Objects/Misc/bureaucracy.rsi
       state: paper_words
 
+- type: entity
+  parent: BaseNTAgentObjective
+  id: BaseNTAgentSlanderDepartment
+  components:
+  - type: Objective
+    icon:
+      sprite: Structures/Wallmounts/screen.rsi
+      state: screen
+
 # listen to CC
 - type: entity
   parent: BaseNTAgentObjective
@@ -54,6 +63,29 @@
         - KillPersonCondition
         - TargetObjectiveImmune # DeltaV
 
+# Dossier
+- type: entity
+  parent: BaseNTAgentObjective
+  id: DossierRandomPersonObjective
+  description: Nanotrasen wants to know more about this person. Figure out what you can and report to central.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/bureaucracy.rsi
+      state: paper_words
+    difficulty: 1
+    unique: false
+  - type: TargetObjective
+    title: objective-condition-dossier-person-title
+  - type: PickRandomPerson
+    filters:
+    # Can't have multiple objectives to kill the same person.
+    - !type:TargetObjectiveMindFilter
+      blacklist:
+        components:
+        - KillPersonCondition
+        - TargetObjectiveImmune # DeltaV
+  
 # fire someone
 - type: entity
   parent: BaseNTAgentObjective
@@ -82,19 +114,75 @@
   parent: BaseNTAgentTestDepartment
   id: TestSecurityObjective
   name: Audit Security.
-  description: Test their response time, their knowledge of law or whatever else. Send the results to Central.
+  description: Test their response time, armory/perma secuirty, or whatever else. Send the results to Central.
 
 - type: entity
   parent: BaseNTAgentTestDepartment
   id: TestEngineeringObjective
   name: Audit Engineering.
-  description: Test their response time to sabotage, structural damage or whatever else. Send the results to Central.
+  description: Test their response time to sabotage, power output, or whatever else. Send the results to Central.
 
 - type: entity
   parent: BaseNTAgentTestDepartment
   id: TestMedicalObjective
   name: Audit Medical.
-  description: Test their response time, their medical knowledge or whatever else. Send the results to Central.
+  description: Test their response time, reactions to types of damage, emergencies or whatever else. Send the results to Central.
+
+- type: entity
+  parent: BaseNTAgentTestDepartment
+  id: TestEpistemicsObjective
+  name: Audit Epistemics.
+  description: Test their artifact secuirty, anomaly finding capabilities, glimmer control, or whatever else. Send the results to Central.
+
+- type: entity
+  parent: BaseNTAgentTestDepartment
+  id: TestServiceObjective
+  name: Audit service.
+  description: test the quality and quanity of their food and drink or whatever else. Send the results to Central.
+
+- type: entity
+  parent: BaseNTAgentTestDepartment
+  id: TestLogisticsObjective
+  name: Audit Logistics.
+  description: test the speed of delivery, material silo secuirty  or whatever else. Send the results to Central.
+
+#look bad 
+
+- type: entity
+  parent: BaseNTAgentSlanderDepartment
+  id: SlanderSecurityObjective
+  name: Make Secuirty Look Bad
+  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+
+- type: entity
+  parent: BaseNTAgentSlanderDepartment
+  id: SlanderEngineeringObjective
+  name: Make Engineering Look Bad
+  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+
+- type: entity
+  parent: BaseNTAgentSlanderDepartment
+  id: SlanderMedicalObjective
+  name: Make Medical Look Bad
+  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+
+- type: entity
+  parent: BaseNTAgentSlanderDepartment
+  id: SlanderEpistemicsObjective
+  name: Make Epistemics Look Bad
+  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+
+- type: entity
+  parent: BaseNTAgentSlanderDepartment
+  id: SlanderLogisticsObjective
+  name: Make Logistics Look Bad
+  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+
+- type: entity
+  parent: BaseNTAgentSlanderDepartment
+  id: SlanderCommandObjective
+  name: Make Command Look Bad
+  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
 
 # defunding
 - type: entity
@@ -107,3 +195,14 @@
     icon:
       sprite: _DV/Objects/Misc/first_bill.rsi
       state: icon
+
+- type: entity
+  parent: BaseNTAgentObjective
+  id: CutCostsObjective
+  name: Cut station costs.
+  description: Nanotrasen wants to cut costs. Remove uneeded machines or equipment.
+  components:
+  - type: Objective
+    icon:
+      sprite: _DV/Objects/Misc/first_bill.rsi
+      state: icon   

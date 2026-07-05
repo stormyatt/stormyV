@@ -37,7 +37,7 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultConspiratorRule = "Conspirators"; // Harmony
     private static readonly EntProtoId DefaultWizardRule = "Wizard";
     private static readonly EntProtoId DefaultHitmanRule = "HitmanRule";
-    private static readonly EntProtoId DefaultNtAgentRule = "NtAgentRule";
+    private static readonly EntProtoId DefaultNTAgentRule = "NTAgentRule";
     private static readonly EntProtoId DefaultNinjaRule = "NinjaSpawn";
     private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
 
@@ -257,7 +257,7 @@ public sealed partial class AdminVerbSystem
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/job_icons.rsi"), "Nanotrasen"),
             Act = () =>
             {
-                _antag.ForceMakeAntag<NTAgentRuleComponent>(targetPlayer, DefaultNtAgentRule);
+                _antag.ForceMakeAntag<NTAgentRuleComponent>(targetPlayer, DefaultNTAgentRule);
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", ntAgentName, Loc.GetString("admin-verb-text-make-NTAgent")),

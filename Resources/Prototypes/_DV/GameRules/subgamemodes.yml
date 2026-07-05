@@ -28,8 +28,15 @@
 
 - type: entity
   parent: [NTAgentRule]
-  id: NTAgentSubgameMode
+  id: NTAgent
   components:
+  - type: AntagRandomObjectives
+    sets:
+    - groups: NTAgentBigObjectiveGroup
+      maxPicks: 1
+    - groups: NTAgentSmallObjectiveGroup
+      maxPicks: 1
+    maxDifficulty: 100
   - type: AntagSelection
     agentName: NTAgent-round-end-name
     selectionTime: IntraPlayerSpawn
