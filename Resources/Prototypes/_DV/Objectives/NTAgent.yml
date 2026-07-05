@@ -67,7 +67,7 @@
 - type: entity
   parent: BaseNTAgentObjective
   id: DossierRandomPersonObjective
-  description: Nanotrasen wants to know more about this person. Figure out what you can and report to central.
+  description: NanoTrasen wants to know more about this person. Figure out what you can and report to Central.
   components:
   - type: Objective
     icon:
