@@ -132,7 +132,7 @@
   parent: BaseNTAgentTestDepartment
   id: TestEpistemicsObjective
   name: Audit Epistemics.
-  description: Test their artifact security, anomaly finding capabilities, glimmer control, or whatever else. Send the results to Central.
+  description: Evaluate their artifact safety standards, anomaly detection capabilities, glimmer control, or whatever else. Send the results to Central.
 
 - type: entity
   parent: BaseNTAgentTestDepartment
@@ -144,7 +144,7 @@
   parent: BaseNTAgentTestDepartment
   id: TestLogisticsObjective
   name: Audit Logistics.
-  description: test the speed of delivery, material silo security  or whatever else. Send the results to Central.
+  description: Test the speed of delivery, material silo security or whatever else. Send the results to Central.
 
 #look bad
 
@@ -152,37 +152,37 @@
   parent: BaseNTAgentSlanderDepartment
   id: SlanderSecurityObjective
   name: Make Security Look Bad
-  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+  description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderEngineeringObjective
   name: Make Engineering Look Bad
-  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+  description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderMedicalObjective
   name: Make Medical Look Bad
-  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+  description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderEpistemicsObjective
   name: Make Epistemics Look Bad
-  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+  description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderLogisticsObjective
   name: Make Logistics Look Bad
-  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+  description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderCommandObjective
   name: Make Command Look Bad
-  description: Nanotrasen wants a reason to fire people. Make them look incompetent to the public.
+  description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 # defunding
 - type: entity
