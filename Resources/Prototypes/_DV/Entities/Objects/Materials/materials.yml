@@ -244,3 +244,14 @@
     componentsToAdd:
     - type: PyrokinesisPower
     - type: Psionic
+
+- type: entity
+  parent: SheetPlastic
+  id: SheetPlastic30
+  name: plastic
+  suffix: 10
+  components:
+  - type: Sprite
+    state: plastic
+  - type: Stack
+    count: 30

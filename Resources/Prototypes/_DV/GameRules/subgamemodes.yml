@@ -25,3 +25,32 @@
         sound: "/Audio/_DV/Ambience/Antag/hitman_briefing_piano_between.ogg"
   - type: DynamicRuleCost
     cost: 100 # bit more than thief
+
+- type: entity
+  id: Conspirators
+  components:
+  - type: ConspiratorRule
+  - type: AntagSelection
+    selectionTime: PostPlayerSpawn # DeltaV - previously IntraPlayerSpawn
+    agentName: conspirator-round-end-agent-name # DeltaV - previously unset
+    definitions:
+    - prefRoles: [ Conspirator ]
+      min: 3
+      max: 4
+      playerRatio: 20
+      departmentDistribution: true # DeltaV - previously unset
+      startingGear: HitmanGear
+      blacklist: # DeltaV - Blacklist AntagImmune
+        components:
+        - AntagImmune
+      briefing:
+        text: conspirator-role-greeting
+        color: "#724F29"
+        sound: /Audio/_Harmony/Misc/conspirator_greeting.ogg
+      components:
+      - type: Conspirator
+      - type: AutoImplant
+        implants:
+        - RadioImplantConspiracy
+      mindRoles:
+      - MindRoleConspirator
