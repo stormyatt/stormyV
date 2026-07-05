@@ -61,6 +61,10 @@
         reagents:
         - ReagentId: Gold
           Quantity: 10
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: IngotGold
@@ -106,6 +110,10 @@
         reagents:
         - ReagentId: Silver
           Quantity: 10
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: IngotSilver

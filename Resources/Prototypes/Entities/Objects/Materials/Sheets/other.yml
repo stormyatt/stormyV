@@ -113,6 +113,10 @@
     - Sheet
     - TiderAnvilParts #SL
     - ConstructionMaterial
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetPlasma
@@ -177,6 +181,10 @@
         - ReagentId: Phosphorus
           Quantity: 5
         canReact: false
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetPlastic
@@ -244,6 +252,10 @@
     energy: 0.8
     castShadows: false
     color: "#9be792"
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetUranium

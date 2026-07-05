@@ -87,6 +87,10 @@
         reagents:
         - ReagentId: Silicon
           Quantity: 10
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetGlass
@@ -164,6 +168,10 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetRGlass
@@ -189,6 +197,7 @@
         - ReagentId: Carbon
           Quantity: 0.5
         canReact: false
+  
 
 - type: entity
   parent: SheetGlassBase
@@ -241,6 +250,10 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetPGlass
@@ -307,6 +320,10 @@
         - ReagentId: Carbon
           Quantity: 0.5
         canReact: false
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetRPGlass
@@ -382,6 +399,10 @@
         - ReagentId: Uranium
           Quantity: 10
         canReact: false
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetUGlass
@@ -436,6 +457,10 @@
         - ReagentId: Carbon
           Quantity: 0.5
         canReact: false
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetRUGlass
@@ -513,6 +538,10 @@
         - ReagentId: Copper
           Quantity: 6.7
         canReact: false
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetClockworkGlass

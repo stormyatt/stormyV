@@ -122,6 +122,32 @@
     stealGroup: ClothingOuterHardsuitEngineeringWhite
     owner: job-name-ce
 
+# 30,000 spaceos objective
+- type: entity
+  parent: BaseTraitorStealObjective
+  id: MoneyStealObjective
+  components:
+  - type: Objective
+    # lotta money
+    difficulty: 1.5
+  - type: StealCondition
+    stealGroup: SpaceDollars
+    minCollectionSize: 30000
+    maxCollectionSize: 30000
+
+# mats objective objective
+- type: entity
+  parent: BaseTraitorStealObjective
+  id: MaterialStealObjective
+  components:
+  - type: Objective
+    # lotta mats
+    difficulty: 2
+  - type: StealCondition
+    stealGroup: BasicMaterials
+    minCollectionSize: 300
+    maxCollectionSize: 300
+
 # teach lesson
 - type: entity
   abstract: true

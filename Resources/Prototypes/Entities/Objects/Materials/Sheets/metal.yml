@@ -71,6 +71,10 @@
           Quantity: 9
         - ReagentId: Carbon
           Quantity: 1
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetSteel
@@ -199,6 +203,10 @@
         - ReagentId: Carbon
           Quantity: 1
         canReact: false
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: BasicMaterials 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: entity
   parent: SheetPlasteel

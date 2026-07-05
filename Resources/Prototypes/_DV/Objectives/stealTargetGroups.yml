@@ -117,6 +117,20 @@
     sprite: Clothing/OuterClothing/Hardsuits/engineering-white.rsi
     state: icon
 
+- type: stealTargetGroup
+  id: SpaceDollars
+  name: steal-target-groups-money
+  sprite:
+    sprite: Objects/Economy/cash.rsi
+    state: cash
+
+- type: stealTargetGroup
+  id: BasicMaterials
+  name: steal-target-groups-materials
+  sprite:
+    sprite: Objects/Materials/Sheets/metal.rsi
+    state: steel
+
 # Ninja
 
 - type: stealTargetGroup

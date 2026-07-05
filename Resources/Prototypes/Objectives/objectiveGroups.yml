@@ -35,6 +35,8 @@
     MantisKnifeStealObjective: 1
     RdClipboardStealObjective: 1
     CeClipboardStealObjective: 1
+    MoneyStealObjective: 1
+    MaterialStealObjective: 1
     # End DeltaV Additions
 
 - type: weightedRandom

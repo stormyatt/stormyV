@@ -53,6 +53,10 @@
         - ItemMask
   - type: Appearance
   - type: CargoSellBlacklist # Frontier
+  # begin DeltaV additions - traitors basic stuff stealing
+  - type: StealTarget
+    stealGroup: SpaceDollars 
+  # begin DeltaV additions - traitors basic stuff stealing
 
 - type: material
   id: Credit
