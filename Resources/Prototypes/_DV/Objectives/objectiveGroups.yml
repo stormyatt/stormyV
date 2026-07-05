@@ -228,7 +228,7 @@
     NTAgentObjectiveGroupAudit: 1
     NTAgentObjectiveGroupCutCosts: 1
     NTAgentObjectiveGroupSlander: 1
-    
+
 
 - type: weightedRandom
   id: NTAgentSmallObjectiveGroup

@@ -85,7 +85,7 @@
         components:
         - KillPersonCondition
         - TargetObjectiveImmune # DeltaV
-  
+
 # fire someone
 - type: entity
   parent: BaseNTAgentObjective
@@ -146,7 +146,7 @@
   name: Audit Logistics.
   description: test the speed of delivery, material silo secuirty  or whatever else. Send the results to Central.
 
-#look bad 
+#look bad
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
@@ -205,4 +205,4 @@
   - type: Objective
     icon:
       sprite: _DV/Objects/Misc/first_bill.rsi
-      state: icon   
+      state: icon
