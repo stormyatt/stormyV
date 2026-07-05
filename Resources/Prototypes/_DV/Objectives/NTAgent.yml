@@ -199,7 +199,7 @@
 - type: entity
   parent: BaseNTAgentObjective
   id: CutCostsObjective
-  name: Cut station costs.
+  name: Liquidate unneeded assets.
   description: Nanotrasen wants to cut costs. Remove uneeded machines or equipment.
   components:
   - type: Objective
