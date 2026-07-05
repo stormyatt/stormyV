@@ -200,7 +200,7 @@
   parent: BaseNTAgentObjective
   id: CutCostsObjective
   name: Liquidate unneeded assets.
-  description: Nanotrasen wants to cut costs. Remove uneeded machines or equipment.
+  description: Nanotrasen wants to cut costs. Remove unneeded machines or equipment.
   components:
   - type: Objective
     icon:
