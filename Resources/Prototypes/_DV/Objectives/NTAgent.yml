@@ -138,7 +138,7 @@
   parent: BaseNTAgentTestDepartment
   id: TestServiceObjective
   name: Audit service.
-  description: test the quality and quanity of their food and drink or whatever else. Send the results to Central.
+  description: Test the quality and quantity of their food and drink, hygiene standards, or whatever else. Send the results to Central.
 
 - type: entity
   parent: BaseNTAgentTestDepartment
