@@ -114,7 +114,7 @@
   parent: BaseNTAgentTestDepartment
   id: TestSecurityObjective
   name: Audit Security.
-  description: Test their response time, armory/perma secuirty, or whatever else. Send the results to Central.
+  description: Test their response time, armory/perma security, or whatever else. Send the results to Central.
 
 - type: entity
   parent: BaseNTAgentTestDepartment
@@ -132,7 +132,7 @@
   parent: BaseNTAgentTestDepartment
   id: TestEpistemicsObjective
   name: Audit Epistemics.
-  description: Test their artifact secuirty, anomaly finding capabilities, glimmer control, or whatever else. Send the results to Central.
+  description: Test their artifact security, anomaly finding capabilities, glimmer control, or whatever else. Send the results to Central.
 
 - type: entity
   parent: BaseNTAgentTestDepartment
@@ -144,7 +144,7 @@
   parent: BaseNTAgentTestDepartment
   id: TestLogisticsObjective
   name: Audit Logistics.
-  description: test the speed of delivery, material silo secuirty  or whatever else. Send the results to Central.
+  description: test the speed of delivery, material silo security  or whatever else. Send the results to Central.
 
 #look bad
 
