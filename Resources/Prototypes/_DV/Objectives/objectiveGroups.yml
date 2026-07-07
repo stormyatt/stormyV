@@ -241,6 +241,7 @@
     FrameRandomPersonObjective: 1
     # FireRandomPersonObjective: 1
     DossierRandomPersonObjective: 1
+    SlanderRandomPersonObjective: 1
 
 - type: weightedRandom
   id: NTAgentObjectiveGroupAudit

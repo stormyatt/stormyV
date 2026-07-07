@@ -63,6 +63,29 @@
         - KillPersonCondition
         - TargetObjectiveImmune # DeltaV
 
+# slander someone
+- type: entity
+  parent: BaseNTAgentObjective
+  id: SlanderRandomPersonObjective
+  description: We want to fire this person. Make everyone think they're incompetent.
+  components:
+  - type: Objective
+    icon:
+      sprite: Structures/Wallmounts/screen.rsi
+      state: screen
+    difficulty: 1.75
+    unique: false
+  - type: TargetObjective
+    title: objective-condition-slander-person-title
+  - type: PickRandomPerson
+    filters:
+    # Can't have multiple objectives to kill the same person.
+    - !type:TargetObjectiveMindFilter
+      blacklist:
+        components:
+        - KillPersonCondition
+        - TargetObjectiveImmune # DeltaV
+
 # Dossier
 - type: entity
   parent: BaseNTAgentObjective
@@ -151,37 +174,37 @@
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderSecurityObjective
-  name: Make Security Look Bad
+  name: Make Security Look Incompetent
   description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderEngineeringObjective
-  name: Make Engineering Look Bad
+  name: Make Engineering Look Incompetent
   description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderMedicalObjective
-  name: Make Medical Look Bad
+  name: Make Medical Look Incompetent
   description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderEpistemicsObjective
-  name: Make Epistemics Look Bad
+  name: Make Epistemics Look Incompetent
   description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderLogisticsObjective
-  name: Make Logistics Look Bad
+  name: Make Logistics Look Incompetent
   description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 - type: entity
   parent: BaseNTAgentSlanderDepartment
   id: SlanderCommandObjective
-  name: Make Command Look Bad
+  name: Make Command Look Incompetent
   description: NanoTrasen wants a reason to fire people. Make them look incompetent to the public.
 
 # defunding
