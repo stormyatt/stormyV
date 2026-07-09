@@ -12,8 +12,9 @@
         - id: Screwdriver
         - id: Wirecutter
         - id: Welder
-        - id: ClothingHeadHatWelding
-        - id: Multitool
+        # - id: NetworkConfigurator # DeltaV - Network Config is useless
+        - id: Multitool # DeltaV - Network Config is useless
+        - id: ClothingHeadHatWelding # DeltaV
 
 - type: entity
   id: ClothingBeltUtilityEngineering
