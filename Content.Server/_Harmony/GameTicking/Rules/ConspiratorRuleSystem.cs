@@ -307,7 +307,7 @@ public sealed class ConspiratorRuleSystem : GameRuleSystem<ConspiratorRuleCompon
             //add an objective for each member of the conspiracy, skip if it cant get them
             foreach (EntityUid ent in conspirators){
                 _mind.TryGetMind(ent, out var mindId, out var mind);
-                if (mind == null || mindId == null){
+                if (mind == null){
                     continue;
                 }
                 _mind.TryAddObjective(mindId, mind, picked);
