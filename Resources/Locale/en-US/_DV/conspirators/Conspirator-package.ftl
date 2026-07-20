@@ -15,7 +15,7 @@ conspirator-weapons-kit-description =
     A kit for arming yourselves.
     Contains 90 wood and 90 Cloth.
     also gives 30 Gunpowder and 5 Igniters.
-    
+
 conspirator-electronics-kit-name = Electronics
 conspirator-electronics-kit-description =
     A kit for making machines.
