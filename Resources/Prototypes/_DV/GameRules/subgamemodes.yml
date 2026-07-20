@@ -29,17 +29,22 @@
 - type: entity
   id: Conspirators
   components:
+  - type: GameRule
+    minPlayers: 30
+  - type: AntagObjectives
+    objectives:
+    - ConspiratorPrepareObjective
   - type: ConspiratorRule
   - type: AntagSelection
-    selectionTime: PostPlayerSpawn # DeltaV - previously IntraPlayerSpawn
+    selectionTime: IntraPlayerSpawn
     agentName: conspirator-round-end-agent-name # DeltaV - previously unset
     definitions:
     - prefRoles: [ Conspirator ]
       min: 3
-      max: 4
-      playerRatio: 20
+      max: 6
+      playerRatio: 10
       departmentDistribution: true # DeltaV - previously unset
-      startingGear: HitmanGear
+      startingGear: ConspiratorGear
       blacklist: # DeltaV - Blacklist AntagImmune
         components:
         - AntagImmune

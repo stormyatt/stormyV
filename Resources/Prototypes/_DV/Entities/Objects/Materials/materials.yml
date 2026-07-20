@@ -246,12 +246,9 @@
     - type: Psionic
 
 - type: entity
-  parent: SheetPlastic
-  id: SheetPlastic30
-  name: plastic
+  parent: MicroManipulatorStockPart
+  id: MicroManipulatorStockPart10
   suffix: 10
   components:
-  - type: Sprite
-    state: plastic
   - type: Stack
-    count: 30
+    count: 10
