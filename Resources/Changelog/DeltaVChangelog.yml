@@ -1,98 +1,4 @@
 ﻿Entries:
-- author: DisposableCrewmember42
-  changes:
-  - message: You can no longer drink the deep fryer.
-    type: Fix
-  id: 2078
-  time: '2026-01-18T04:40:48.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5238
-- author: snowywinters
-  changes:
-  - message: Reinforced cameras can now be built! They have additional HP and are
-      more resistant to explosions and meteors.
-    type: Add
-  - message: The AI has its own section in the security cameras console.
-    type: Add
-  id: 2079
-  time: '2026-01-18T17:18:45.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5027
-- author: Dorragon
-  changes:
-  - message: Ready Manifest added to the lobby
-    type: Add
-  id: 2080
-  time: '2026-01-18T18:47:07.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5187
-- author: MilonPL
-  changes:
-  - message: Added a new traits system, supporting conditions and new effects. Make
-      sure to check out the Traits tab in the character editor!
-    type: Add
-  - message: All character traits have been reset.
-    type: Remove
-  id: 2081
-  time: '2026-01-20T11:49:59.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5208
-- author: pootslap
-  changes:
-  - message: You can now examine character descriptions from much further away.
-    type: Tweak
-  id: 2082
-  time: '2026-01-20T11:49:48.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5219
-- author: Eternally-Confused
-  changes:
-  - message: (TEST MERGE) Space pens now contain a chemical called Stabilizine instead
-      of Leporazine, which is better at stabilizing body temperature.
-    type: Tweak
-  - message: Avali no longer die from space pens.
-    type: Tweak
-  id: 2083
-  time: '2026-01-20T21:15:21.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5181
-- author: turtlemutt
-  changes:
-  - message: Added more names for ghost role spawns.
-    type: Add
-  id: 2084
-  time: '2026-01-21T05:17:05.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5254
-- author: Cepelinas1
-  changes:
-  - message: Logistics Officers can now use the shipyard to buy shuttles. No need
-      to beg Captain to buy it anymore!
-    type: Add
-  id: 2085
-  time: '2026-01-21T05:52:10.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5251
-- author: Colin-Tel
-  changes:
-  - message: Eked the Anglish tung tie. In other words, added a trait that lets you
-      talk like an Anglo Saxon with over 1,100 word replacements.
-    type: Add
-  id: 2086
-  time: '2026-01-21T09:37:07.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4092
-- author: ShepardToTheStars
-  changes:
-  - message: The ninja is now revealed with hit with attacks, projectiles, explosions,
-      and grenades that do damage.
-    type: Tweak
-  - message: The ninja is now revealed with hit with attacks, projectiles, explosions,
-      and grenades that do damage.
-    type: Fix
-  id: 2087
-  time: '2026-01-21T14:18:56.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5217
-- author: Toby222
-  changes:
-  - message: FTL times have been adjusted. Startup is shorter, travel is longer.
-    type: Tweak
-  - message: The FTL startup sound now lines up with the duration of startup again!!!
-    type: Fix
-  id: 2088
-  time: '2026-01-21T14:50:49.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5257
 - author: ShepardToTheStars, foxcumberland
   changes:
   - message: Added fashionable longcoats for command, security, and crew. Find them
@@ -4371,4 +4277,92 @@
   id: 2578
   time: '2026-07-20T20:29:02.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6292
+- author: keekee38
+  changes:
+  - message: Added the novice mark, to help show that you're new! It is on intern
+      roles by default, and optional for everyone
+    type: Add
+  - message: Some clothes now have examine text, in particular pride clothes.
+    type: Tweak
+  id: 2579
+  time: '2026-07-20T22:08:57.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6118
+- author: Coryler
+  changes:
+  - message: Shadekin has arrived in the DeltaV sector.
+    type: Add
+  id: 2580
+  time: '2026-07-20T22:10:50.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5481
+- author: sowelipililimute
+  changes:
+  - message: The crew monitor now reports global coordinate positions.
+    type: Tweak
+  id: 2581
+  time: '2026-07-20T22:20:12.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6326
+- author: keekee38
+  changes:
+  - message: Vulpkanins can yip now.
+    type: Tweak
+  id: 2582
+  time: '2026-07-20T22:21:24.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6301
+- author: pootslap
+  changes:
+  - message: Improvised shotgun shells use the old upstream crafting recipe.
+    type: Tweak
+  - message: The improvised shotgun is craftable once again.
+    type: Fix
+  id: 2583
+  time: '2026-07-20T22:22:59.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6327
+- author: kotobdev
+  changes:
+  - message: Security cold weather ponchos are gone from loadouts and the SecDrobe.
+    type: Remove
+  id: 2584
+  time: '2026-07-20T22:44:01.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6332
+- author: sowelipililimute
+  changes:
+  - message: Security now has access to evidence bags, for storing all the illegal
+      things that can be stored.
+    type: Add
+  id: 2585
+  time: '2026-07-20T23:17:53.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6280
+- author: jessiscah23
+  changes:
+  - message: Added organizational capabilities to the cargo bounty computer.
+    type: Add
+  id: 2586
+  time: '2026-07-20T23:23:28.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6306
+- author: Proxysseia
+  changes:
+  - message: (TEST MERGE) Increased traitor starting telecrystal balance from 20 to
+      30.
+    type: Tweak
+  id: 2587
+  time: '2026-07-20T23:37:07.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6275
+- author: ArionGekkota
+  changes:
+  - message: reintroduced researchable PKA modkits
+    type: Add
+  - message: Changed the PKA to its current upstream state
+    type: Tweak
+  - message: Reduced the health of some salvage mobs
+    type: Tweak
+  id: 2588
+  time: '2026-07-20T23:46:11.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6258
+- author: nlaky
+  changes:
+  - message: Fixed incorrect Vulpkanin mask sprites.
+    type: Fix
+  id: 2589
+  time: '2026-07-21T00:05:09.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6201
 Order: 1
