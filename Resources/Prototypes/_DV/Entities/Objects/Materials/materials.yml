@@ -252,3 +252,11 @@
   components:
   - type: Stack
     count: 10
+
+- type: entity
+  parent: MaterialGunpowder
+  id: MaterialGunpowder30
+  suffix: 30
+  components:
+  - type: Stack
+    count: 30

@@ -42,15 +42,9 @@
     state: base
   content:
   - MaterialWoodPlank
-  - MaterialWoodPlank
-  - MaterialWoodPlank
   - MaterialCloth
-  - MaterialCloth
-  - MaterialCloth
-  - CrushedPhosphorus
-  - CrushedPhosphorus
-  - Igniter
-  - Igniter
+  - MaterialGunpowder30
+  - UtilityKnife
   - Igniter
   - Igniter
   - Igniter
