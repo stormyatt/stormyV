@@ -36,7 +36,8 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId ParadoxCloneRuleId = "ParadoxCloneSpawn";
     private static readonly EntProtoId DefaultConspiratorRule = "Conspirators"; // Harmony
     private static readonly EntProtoId DefaultWizardRule = "Wizard";
-    private static readonly EntProtoId DefaultHitmanRule = "HitmanRule";
+    private static readonly EntProtoId DefaultArcanistRule = "Arcanist";
+    private static readonly EntProtoId DefaultHitmanRule = "HitmanRule"; //DV
     private static readonly EntProtoId DefaultNinjaRule = "NinjaSpawn";
     private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
 
@@ -276,6 +277,22 @@ public sealed partial class AdminVerbSystem
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", hitmanName, Loc.GetString("admin-verb-text-make-hitman")),
+        };
+        args.Verbs.Add(hitman);
+        // end DeltaV additions - add hitman
+        // start DeltaV Additions - add arcanist
+        var arcanistName = Loc.GetString("admin-verb-make-arcanist");
+        Verb arcanist = new()
+        {
+            Text = arcanistName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/job_icons.rsi"), "Wizard"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<ArcanistRuleComponent>(targetPlayer, DefaultArcanistRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", hitmanName, Loc.GetString("admin-verb-text-make-arcanist")),
         };
         args.Verbs.Add(hitman);
         // end DeltaV additions - add hitman

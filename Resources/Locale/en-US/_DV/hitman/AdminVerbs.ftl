@@ -1,3 +1,3 @@
-admin-verb-make-hitman = Make Hitman
+admin-verb-make-arcanist = Make Arcanist
 
-admin-verb-text-make-hitman = Make the target into a Hitman.
+admin-verb-text-make-arcanist = Make the target into a Arcanist.

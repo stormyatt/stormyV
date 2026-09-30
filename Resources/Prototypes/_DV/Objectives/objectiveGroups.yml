@@ -235,3 +235,24 @@
     TestEngineeringObjective: 1
     TestMedicalObjective: 1
     DefundDepartmentObjective: 1
+
+##hitman
+- type: weightedRandom
+  id: ArcanistBigObjectiveGroup
+  weights:
+    HitmanObjectiveGroupNice: 1
+
+- type: weightedRandom
+  id: ArcanistSmallObjectiveGroup
+  weights:
+    HitmanObjectiveGroupNice: 1
+
+- type: weightedRandom
+  id: ArcanistObjectiveGroupBigTest
+  weights:
+    ArcanistTestBigObjective: 1
+
+- type: weightedRandom
+  id: ArcanistObjectiveGroupSmallTest
+  weights:
+    ArcanistTestSmallObjective: 1

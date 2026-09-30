@@ -1,0 +1,38 @@
+- type: entity
+  parent: BaseObjective
+  abstract: true
+  id: BaseArcanistObjective
+  components:
+  - type: Objective
+    issuer: objective-issuer-hitman
+    difficulty: 1
+  - type: RoleRequirement
+    roles:
+    - ArcanistRole
+
+##big objectives
+
+- type: entity
+  parent: [BaseArcanistObjective, BaseFreeObjective]
+  id: ArcanistTestBigObjective
+  name: test arcanist big objective
+  description: test arcanist big objective
+  components:
+  - type: Objective
+    icon:
+      sprite: _DV/Misc/wizard.rsi
+      state: scale
+
+##small objectives
+
+- type: entity
+  parent: [BaseWizardObjective, BaseFreeObjective]
+  id: ArcanistTestSmallObjective
+  name: test arcanist small objective
+  description: test arcanist small description
+  components:
+  - type: Objective
+    difficulty: 1
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: fireball

@@ -56,3 +56,28 @@
   id: NanolinkPointless
   name: store-category-pointless
   priority: 3
+
+# Wizard federation but more (wizlink)
+- type: entity
+  id: StorePresetWizMind
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-wizmind
+    categories:
+    - WizMindRed
+    - WizMindOrange
+    currencyWhitelist:
+    - WizCoin
+    balance:
+      WizCoin: 0
+
+- type: storeCategory
+  id: WizMindRed
+  name: store-category-red
+  priority: 0
+
+- type: storeCategory
+  id: WizMindOrange
+  name: store-category-orange
+  priority: 1

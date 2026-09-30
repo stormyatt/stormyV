@@ -1,0 +1,30 @@
+# red
+
+- type: listing
+  id: WizMindRepulse
+  name: wizmind-repulse-name
+  description: wizmind-repulse-desc
+  productAction: ActionRepulse
+  cost:
+    WizCoin: 10
+  categories:
+  - WizMindRed
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+# orange
+
+- type: listing
+  id: WizMindKnock
+  name: wizmind-knock-name
+  description: wizmind-knock-desc
+  productAction: ActionKnock
+  cost:
+    WizCoin: 25
+  categories:
+  - WizMindOrange
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+

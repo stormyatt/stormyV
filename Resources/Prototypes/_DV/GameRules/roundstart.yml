@@ -1,0 +1,45 @@
+- type: entity
+  abstract: true
+  parent: BaseGameRule
+  id: Arcanist
+  components:
+  - type: AntagRandomObjectives
+    sets:
+    - groups: ArcanistBigObjectiveGroup
+    - groups: ArcanistSmallObjectiveGroup
+    maxDifficulty: 3
+  - type: GameRule
+    minPlayers: 15
+    delay:
+      min: 30
+      max: 60
+  - type: AntagSelection
+    selectionTime: IntraPlayerSpawn
+    agentName: arcanist-round-end-agent-name
+    definitions:
+    - prefRoles: [ Arcanist ]
+      max: 5
+      playerRatio: 15
+      lateJoinAdditional: false
+      blacklist:
+        components:
+        - AntagImmune
+      components:
+      - type: Spellcaster
+        MaxSp: 100
+        CurrentSp: 100
+        SpRegen: 0.25
+      - type: ActionGrant
+        actions:
+        - ActionWizardStore
+      - type: Store
+        parent: StorePresetWizMind
+        balance:
+          WizCoin: 100
+      mindRoles:
+      - MindRoleArcanist
+      - type: NpcFactionMember
+      factions:
+        - Wizard
+  - type: DynamicRuleCost
+    cost: 150

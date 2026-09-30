@@ -141,3 +141,16 @@
   - type: HitmanRole
   - type: RoleBriefing
     briefing: hitman-briefing
+
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleArcanist
+  name: Arcanist
+  components:
+  - type: MindRole
+    subtype: role-subtype-Arcanist
+    antagPrototype: Arcanist
+    exclusiveAntag: true
+  - type: ArcanistRole
+  - type: RoleBriefing
+    briefing: Arcanist-briefing

@@ -1,0 +1,15 @@
+- type: antag
+  id: Arcanist
+  name: roles-antag-arcanist-name
+  objective: roles-antag-arcanist-objective
+  antagonist: true
+  setPreference: true
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 24h # works for thief works for me
+
+- type: startingGear
+  id: ArcanistGear
+  storage:
+    back:
+    - BasicWand

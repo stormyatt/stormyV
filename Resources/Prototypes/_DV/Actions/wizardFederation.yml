@@ -1,0 +1,5 @@
+- type: entity
+  parent: ActionIntrinsicStore
+  id: ActionWizardStore
+  name: Wizard Mind
+  description: Opens the mind to learn spells.
